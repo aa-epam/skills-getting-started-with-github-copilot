@@ -86,11 +86,31 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
-  margin: 8px 0 0 18px;
+  list-style: none;
+  margin: 8px 0 0 0;
   padding: 0;
   max-height: 120px;
   overflow: auto;
+}
+
+/* Delete button for participant */
+.participant-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-participant-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.delete-participant-btn:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 .participant-item {
